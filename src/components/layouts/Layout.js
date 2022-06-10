@@ -7,11 +7,13 @@ import './Layout.css';
 
 function Layout(props){
     return (
-        <div>
+        <div className="centrepane">
         <Header/>
         <NavBar/>
         <div>
-         {props.children}
+            <main>
+            {props.children}
+            </main>
          </div>
          <Footer/>
     </div>
