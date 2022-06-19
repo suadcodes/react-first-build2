@@ -1,4 +1,4 @@
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Layout from "./components/layouts/Layout.js";
 import PageNotFound from "./components/pages/404.js";
 import Home from "./components/pages/Home.js";
@@ -12,8 +12,8 @@ function App() {
  <Layout>
   <Routes>
     <Route path ='/'element ={<Home/>}/>
-    <Route path ='/'element ={<SignIn/>}/>
-    <Route path ='/'element ={ <ContactUs/>}/>
+    <Route path ='/signin'element ={<SignIn/>}/>
+    <Route path ='/contact'element ={ <ContactUs/>}/>
     <Route path ='*'element ={ <PageNotFound/>}/>
     </Routes>
  </Layout>
