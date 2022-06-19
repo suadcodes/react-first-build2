@@ -1,3 +1,5 @@
+
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
@@ -6,17 +8,25 @@ function NavBar() {
   // Context -------------------------------------
   // Methods -------------------------------------
 
+ const getLinkStyle = ({isActive}) => (
+ isActive? 'navSelected' : null
+
+ );
+
+
   // View ----------------------------------------
   return (
     <nav>
       <div className="navItem">
-        <a href='/'>Home </a>
+
+        <NavLink to='/' className={getLinkStyle}>Home </NavLink>
       </div>
       <div className="navItem">
-      <a href='/signin'>Sign in</a>
+      <NavLink to='/signin' className={getLinkStyle}>Sign in</NavLink>
       </div>
       <div className="navItem">
-      <a href='/contact'>Contact Us </a>
+      <NavLink to='/contact' className={getLinkStyle}>Contact Us</NavLink>
+
       </div>
     </nav>
   )
