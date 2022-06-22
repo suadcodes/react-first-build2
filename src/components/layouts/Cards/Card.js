@@ -1,10 +1,21 @@
 import modules from "./module";
-
-const Card = ({modules}) => {
+import './Card.css';
+const Card = (props) => {
     return (
-      <div>
-          <h3>{modules.ModuleName}</h3>
-          </div>
-    )
-  }
-  
+     <>
+      {props.details.map((value,index) =>(
+
+          <div className="Card" key={index}>
+            <img src={value.ModuleImage}></img>
+              <p>{value.ModuleName}</p>
+              <p>({value.ModuleCode})</p>
+              <p>Level {value.ModuleLevel}</p>
+              </div>
+          )
+        )
+          }
+          </>
+        )
+};
+
+export default Card

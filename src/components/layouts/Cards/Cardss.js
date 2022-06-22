@@ -1,16 +1,16 @@
 import React from 'react'
-import modules from './module'
+import modules from './module';
 import Card from './Card.js'
-const Cards = () => {
+const Cardss = () => {
   return (
-    <>
-    {modules.map((modules) => (
-    <Card key={modules.ModuleID} Card={Card}
-    />
+    <div className="Cardss">
+    {modules.map((item) => (
+    <li key={modules.ModuleID}>{Card}</li>
+
     ))}
-    </>
+    </div>
   )
 }
   
 
-export default Cards
+export default Cardss

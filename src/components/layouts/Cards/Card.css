@@ -1,0 +1,11 @@
+.Card{
+border:1px solid black;
+width: 250px;
+margin:20px;
+
+}
+
+.Card.img{
+    width:250px;
+}
+
