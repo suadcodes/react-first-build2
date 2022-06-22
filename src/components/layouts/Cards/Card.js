@@ -1,4 +1,3 @@
-import modules from "./module";
 import './Card.css';
 const Card = (props) => {
     return (
@@ -6,7 +5,7 @@ const Card = (props) => {
       {props.details.map((value,index) =>(
 
           <div className="Card" key={index}>
-            <img src={value.ModuleImage}></img>
+            <div><img src={value.ModuleImage}></img></div>
               <p>{value.ModuleName}</p>
               <p>({value.ModuleCode})</p>
               <p>Level {value.ModuleLevel}</p>

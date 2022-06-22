@@ -2,10 +2,14 @@
 border:1px solid black;
 width: 250px;
 margin:20px;
-
+overflow: hidden;
 }
-
-.Card.img{
-    width:250px;
+Card div.img{
+    overflow: hidden;
+    
 }
-
+.containerr{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
