@@ -1,14 +1,12 @@
 import Card from "../layouts/Cards/Card";
+import Cardss from "../layouts/Cards/Cardss";
 import modules from "../layouts/Cards/module";
-import './Card.css';
 function MyModules(){
 
 return (
     <div>
 <h1>My Modules</h1>
-<div className='containerr'>
-<Card details={modules}/>
-    </div>
+<Cardss/>
 </div>
 )
 }

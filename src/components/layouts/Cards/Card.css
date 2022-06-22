@@ -1,15 +1,18 @@
 .Card{
-border:1px solid black;
-width: 250px;
-margin:20px;
-overflow: hidden;
+    display: flex;
+  flex-direction: column;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 1em;
+  
 }
-Card div.img{
-    overflow: hidden;
-    
-}
-.containerr{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-}
+
+.Cardss {
+    display: grid;
+    flex-wrap: wrap;
+    margin-left:20px;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+
+  }

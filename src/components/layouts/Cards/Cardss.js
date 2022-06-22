@@ -1,13 +1,11 @@
 import React from 'react'
 import modules from './module';
 import Card from './Card.js'
+import './Card.css';
 const Cardss = () => {
   return (
-    <div className="Cardss">
-    {modules.map((item) => (
-    <li key={modules.ModuleID}>{Card}</li>
-
-    ))}
+    <div className="Card§ss">
+    <Card details={modules}/>
     </div>
   )
 }
