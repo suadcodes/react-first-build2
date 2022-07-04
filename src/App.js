@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
  <Layout>
   <Routes>
-    <Route path ='/'element ={<MyModules/>}/>
-    <Route path ='/schedule'element ={<MySchedule/>}/>
-    <Route path ='/assessment'element ={ <MyAssesments/>}/>
-    <Route path ='*'element ={ <PageNotFound/>}/>
+    <Route path ='/' element ={<MyModules/>}/>
+    <Route path ='/schedule' element ={<MySchedule/>}/>
+    <Route path ='/assessment' element ={ <MyAssesments/>}/>
+    <Route path ='*' element ={ <PageNotFound/>}/>
     </Routes>
  </Layout>
  </BrowserRouter>

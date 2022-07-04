@@ -1,22 +1,37 @@
+import {FavButton} from "./Button.js";
 import './Card.css';
-const Card = (props) => {
-    return (
-     <>
-      {props.details.map((value,index) =>(
 
-          <div className='wrapper'>
-          <div className="Card" key={index}>
-            <div><img src={value.ModuleImage}></img></div>
-              <p>{value.ModuleName}</p>
-              <p>({value.ModuleCode})</p>
-              <p>Level {value.ModuleLevel}</p>
-              </div>
-              </div>
-          )
-        )
-          }
-          </>
-        )
+const Card = (props) => {
+
+const onfav =()=>{
+  return(console.log("FAVVVV"))
+}
+
+const ondelete = () => {
+    return(console.log("FAVVVV")) 
+}
+
+const onedit = () => {
+  return(console.log("FAVVVV"))
+}
+
+  return (
+    <div className="Card" >
+      <div className="CardImage">
+        <img src={props.module.ModuleImage} alt="Representation of module"/>
+      </div>
+      <div className="CardDetails">
+        <p>{props.module.ModuleName} ({props.module.ModuleCode})</p> 
+        <p>Level {props.module.ModuleLevel}</p>
+      </div>
+      <div className="CardButtons">
+        <FavButton onFav={onfav} name="favourite it" />
+        <FavButton onEdit={onedit}name="edit it"/> 
+        <FavButton onDelete={ondelete}name="delete it"/> 
+      </div>
+    </div>
+  
+  )
 };
 
 export default Card

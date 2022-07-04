@@ -1,12 +1,12 @@
 import React from 'react'
-import modules from './module';
-import Card from './Card.js'
-import './Card.css';
+import modules from './module'
 const Cardss = () => {
   return (
-    <div className="Card§ss">
-    <Card details={modules}/>
-    </div>
+    <div className="card-grid">
+    {modules.map(card => {
+      return <Card card={newmm} key={modules.id} />
+    })}
+  </div>
   )
 }
   
