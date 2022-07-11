@@ -7,11 +7,11 @@ function Footer() {
     // Methods -------------------------------------
     // View ----------------------------------------
     return (
-      <footer>
+  <footer>
         <a href="https://icons8.com/icon/85327/expand-arrow">
         All icons by Icons8
         </a>
-      </footer>
+  </footer>
     )
   }
   export default Footer;

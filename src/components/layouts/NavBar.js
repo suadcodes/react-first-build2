@@ -18,7 +18,6 @@ function NavBar() {
   return (
     <nav>
       <div className="navItem">
-
         <NavLink to='/' className={getLinkStyle}>Home </NavLink>
       </div>
       <div className="navItem">
@@ -26,7 +25,6 @@ function NavBar() {
       </div>
       <div className="navItem">
       <NavLink to='/contact' className={getLinkStyle}>Contact Us</NavLink>
-
       </div>
     </nav>
   )
