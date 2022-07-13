@@ -1,5 +1,5 @@
 export let modules = [
-    {
+  {
       ModuleID: 1,
       ModuleName: "Games Programming",
       ModuleCode: "CI2270",
@@ -80,6 +80,5 @@ export let modules = [
       ModuleImage: "https://images.freeimages.com/images/small-previews/402/rocket-in-the-museum-1450195.jpg"
     }
   ];
-  
   export default modules;
   

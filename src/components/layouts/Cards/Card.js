@@ -1,15 +1,20 @@
 import {FavButton} from "./Button.js";
 import './Card.css';
-
+import module from "./module.js";
 const Card = (props) => {
 
 const onfav =()=>{
-  return(console.log("FAVVVV"))
+  return(
+    console.log("FAVVVV")
+  )
+}
+const ondelete =()=>{
+  return(
+    console.log("FAVVVV")
+  )
 }
 
-const ondelete = () => {
-    return(console.log("FAVVVV")) 
-}
+
 
 const onedit = () => {
   return(console.log("FAVVVV"))
@@ -28,7 +33,7 @@ const onedit = () => {
         <FavButton onFav={onfav} name="favourite it" />
         <FavButton onEdit={onedit}name="edit it"/> 
         <FavButton onDelete={ondelete}name="delete it"/> 
-      </div>
+      </div>3
     </div>
   
   )
