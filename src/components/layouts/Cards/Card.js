@@ -5,17 +5,14 @@ const Card = (props) => {
 
 const onfav =()=>{
   return(
-    console.log("FAVVVV")
+    alert("Button Clicked!")
   )
 }
 const ondelete =()=>{
   return(
-    console.log("FAVVVV")
+    alert("Button Clicked!")
   )
 }
-
-
-
 const onedit = () => {
   return(console.log("FAVVVV"))
 }
@@ -33,7 +30,7 @@ const onedit = () => {
         <FavButton onFav={onfav} name="favourite it" />
         <FavButton onEdit={onedit}name="edit it"/> 
         <FavButton onDelete={ondelete}name="delete it"/> 
-      </div>3
+      </div>
     </div>
   
   )
